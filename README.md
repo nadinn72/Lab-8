@@ -9,45 +9,24 @@
 
 # PENJELASAN DIAGRAM CLASS
 
-# 1. Kelas Mahasiswa
+**Struktur Data**
 
-**Deskripsi**
-- Kelas yang merepresentasikan data individual mahasiswa.
+- **list daftar_mahasiswa:** Ini adalah sebuah list yang digunakan untuk menyimpan data mahasiswa. Setiap elemen dalam list ini kemungkinan adalah sebuah objek atau dictionary yang berisi informasi mahasiswa.
 
-**Atribut**
-- `nama` (String): Nama mahasiswa
-- `nim` (int): Nomor Induk Mahasiswa
-- `nilai` (int): Nilai akademik mahasiswa
 
-**Metode**
-- Konstruktor untuk inisialisasi
-- Getter dan setter untuk setiap atribut
-- `toString()`: Representasi string objek mahasiswa
+**Method**
 
-# 2. Kelas ManajemenMahasiswa
-
-**Deskripsi**
-- Kelas yang bertanggung jawab mengelola kumpulan data mahasiswa.
-
-**Atribut**
-- `daftarMahasiswa`: List untuk menyimpan objek Mahasiswa
-
-**Metode**
-- `tambahMahasiswa()`: Menambah mahasiswa baru
-- `hapusMahasiswa()`: Menghapus mahasiswa berdasarkan NIM
-- `cariMahasiswa()`: Mencari mahasiswa berdasarkan NIM
-- `tampilkanSemuaMahasiswa()`: Menampilkan seluruh data
-- `ubahMahasiswa()`: Mengubah data mahasiswa
-
-# 3. Kelas AplikasiMahasiswa
-**Deskripsi**
-- Kelas utama untuk menjalankan aplikasi dan berinteraksi dengan pengguna.
-
-**Metode**
-- `main()`: Titik awal program
-- `tampilkanMenu()`: Menampilkan pilihan menu
-- `prosesMenu()`: Memproses pilihan pengguna
-
-**Hubungan Antar Kelas**
-- ManajemenMahasiswa mengandung beberapa objek Mahasiswa
-- AplikasiMahasiswa menggunakan ManajemenMahasiswa
+- __init__(): Method ini kemungkinan digunakan untuk inisialisasi objek Mahasiswa. Biasanya, method ini akan membuat list daftar_mahasiswa kosong.
+- tambah(nama: str, nim: str, nilai: str): Method ini digunakan untuk menambahkan data mahasiswa baru ke dalam list daftar_mahasiswa.
+  - Parameter:
+    - nama: String yang menyimpan nama mahasiswa.
+    - nim: String yang menyimpan NIM mahasiswa.
+    - nilai: String yang menyimpan nilai mahasiswa.
+- tampilkan(): Method ini digunakan untuk menampilkan data semua mahasiswa yang ada dalam list daftar_mahasiswa.
+- hapus(nim: str): Method ini digunakan untuk menghapus data mahasiswa berdasarkan NIM dari list daftar_mahasiswa.
+  - Parameter:
+    - nim: String yang menyimpan NIM mahasiswa yang akan dihapus.
+- ubah(nim: str, nilai_baru: str): Method ini digunakan untuk mengubah nilai mahasiswa berdasarkan NIM.
+  - Parameter:
+    - nim: String yang menyimpan NIM mahasiswa yang akan diubah nilainya.
+    - nilai_baru: String yang menyimpan nilai baru mahasiswa.
