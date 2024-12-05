@@ -1,6 +1,7 @@
 # Lab-8
 
 # FLOWCHART
+![Flowchart](https://github.com/user-attachments/assets/06af9099-2efc-42cf-ad75-7c2b7ef740db)
 
 # DIAGRAM CLASS
 ![Diagram Class](https://github.com/user-attachments/assets/e224967e-0617-47d9-af8b-2f34c423cef0)
